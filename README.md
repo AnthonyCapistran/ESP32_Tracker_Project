@@ -20,7 +20,7 @@ The ESP32-S3 and ESP32-WROOM boards communicate with each other over ESP-NOW.## 
 - Supports locking onto a specific face by size and position, entering an idle search sweep after `IDLE_TIMEOUT`, and re-acquiring a matching target size.
 
 ## Setup & Usage
-1. Install dependencies:pip install opencv-python numpy
+1. Install dependencies:`pip install opencv-python numpy`
 2. Place the DNN model files (deploy.prototxt and res10_300x300_ssd_iter_140000.caffemodel) next to the script. <!-- TODO: confirm location. Without them the script falls back to the Haar cascade. -->
 3. Edit the configuration values at the top of `esp32_face_tracker.py`:
 - `STREAM_URL`: URL of the ESP32-S3 camera stream
@@ -28,8 +28,8 @@ The ESP32-S3 and ESP32-WROOM boards communicate with each other over ESP-NOW.## 
 - `UDP_PORT`: UDP port the ESP32-WROOM listens on
 - `IDLE_TIMEOUT`: seconds without a face before the idle search sweep starts
 4. Flash the ESP32 firmware from the firmware folders in this repo.
-5. Run the tracker:
-`## Repository Contents
+5. Run the tracker:`python esp32_face_tracker.py`
+Repository Contents
 - `esp32_face_tracker.py`: Python face detection and UDP command sender
 - `SMART_FAN_PROJECT_CODE/`: ESP32 camera, pan/tilt, and motor Arduino sketches and libraries
 - `Smart Fan/`: Hardware, PCB, and mechanical mount files for the Smart Fan build
