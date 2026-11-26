@@ -1,0 +1,1 @@
+Update symbol J_ESP32_LEFT_1 from 'Connector_Generic:Conn_01x15' to 'Connector_Generic:Conn_01x15': OK
