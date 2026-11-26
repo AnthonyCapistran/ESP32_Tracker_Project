@@ -20,8 +20,8 @@ The ESP32-S3 and ESP32-WROOM boards communicate with each other over ESP-NOW.## 
 - Supports locking onto a specific face by size and position, entering an idle search sweep after `IDLE_TIMEOUT`, and re-acquiring a matching target size.
 
 ## Setup & Usage
-1. Install dependencies:
-`2. Place the DNN model files (`deploy.prototxt` and `res10_300x300_ssd_iter_140000.caffemodel`) and update `PROTOTXT_PATH` and `CAFFEMODEL_PATH` in `esp32_face_tracker.py` as needed (without them, the script falls back to the Haar cascade).
+1. Install dependencies:pip install opencv-python numpy
+2. Place the DNN model files (deploy.prototxt and res10_300x300_ssd_iter_140000.caffemodel) next to the script. <!-- TODO: confirm location. Without them the script falls back to the Haar cascade. -->
 3. Edit the configuration values at the top of `esp32_face_tracker.py`:
 - `STREAM_URL`: URL of the ESP32-S3 camera stream
 - `WROOM_IP`: IP address of the ESP32-WROOM
